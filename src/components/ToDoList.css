@@ -1,0 +1,240 @@
+.todo-list-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .todo-list-container {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .todo-list-container {
+    width: 70%;
+    max-width: 1000px;
+  }
+}
+
+.todo-form {
+    margin-bottom: 20px;
+}
+
+.todo-form input,
+.todo-form select,
+.todo-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.todo-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-form button:hover {
+    background-color: #0056b3;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.todo-list .content {
+    flex-grow: 1;
+}
+
+.todo-list .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.todo-list .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.todo-list .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.todo-list .delete-btn svg {
+    width: 8px;
+    height: 8px;
+    fill: white;
+}
+
+@media (min-width: 768px) {
+  .todo-list .delete-btn {
+    padding: 8px 10px;
+  }
+
+  .todo-list .delete-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.todo-list .status-btn {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.todo-list .status-btn.incomplete {
+    background-color: #fff9c4; 
+    color: black;
+}
+
+.todo-list .status-btn.incomplete:hover {
+    background-color: #fff176;
+}
+
+.todo-list .status-btn.completed {
+    background-color: #28a745; 
+    color: white;
+}
+
+.todo-list .status-btn.completed:hover {
+    background-color: #218838;
+}
+
+.todo-list .edit-btn {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list .edit-btn svg {
+    width: 8px; 
+    height: 8px;
+    fill: white;
+}
+
+@media (min-width: 768px) {
+  .todo-list .edit-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.todo-list .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.todo-list form input {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+.todo-list .save-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list .save-btn:hover {
+    background-color: #0056b3;
+}
+
+.todo-list .cancel-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-list .cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+@media (min-width: 768px) {
+  .todo-list button {
+    padding: 10px 15px;
+  }
+}
+
+.todo-list .status-text {
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px 6px; 
+    border-radius: 4px;
+}
+
+
+.todo-list .status-text.completed {
+    background-color: #28a745; 
+    color: white;
+}
+
+
+.todo-list .status-text.incomplete {
+    background-color: #fff9c4;
+    color: black;
+}
+
+.status-btn {
+    background-color: #28a745;
+    color: white;
+  }
+
+
+  
